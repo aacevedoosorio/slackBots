@@ -6,21 +6,23 @@
  */
 
 /**
- * @returns {{getRoutes: getRoutes}}
+ /**
+ * @typedef {Object} SlackRouter
+ * @property {Function} SlackRouter.getRoutes
+ */
+
+/**
+ *
+ * @returns {SlackRouter}
  * @constructor
  */
 function SlackRouter() {
 
-    return {
-        getRoutes: getRoutes
-    };
-
     /**
      * @public
      * @typedef {SlackRoute[]}
-
      */
-    function getRoutes() {
+    this.getRoutes = function () {
         return [
             {
                 path: '/',
