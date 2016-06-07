@@ -14,7 +14,7 @@ var CLIENT_EVENTS = slackClient.CLIENT_EVENTS
 
 var Scoreaboard = require('./modules/perfect_game/scoreboard');
 
-var token = process.env.SLACK_API_TOKEN || 'xoxb-45174287958-cDTETRbyB2H6St2tnxIKOg3d';
+var token = process.env.SLACK_API_TOKEN || 'xoxb-45174287958-2aTo1NbucnnP0YA2I97hel17';
 
 var slackRtm = new RtmClient(token, {logLevel: 'error'});
 slackRtm.start();
